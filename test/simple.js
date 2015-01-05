@@ -93,6 +93,7 @@ describe("Code generator", function () {
       test("({set a(param){;}})");
       test("({get a(){;},set a(param){;},b:1})");
       test("({a:(a,b)})");
+      test("{'x y':'z'}");
     });
 
     it("Sequence", function () {
@@ -113,6 +114,7 @@ describe("Code generator", function () {
       test("a,b^=b");
       test("b^=b,b");
       test("b^=(b,b)");
+      test("a={'x y':'z'}");
     });
 
     it("Conditional", function () {
